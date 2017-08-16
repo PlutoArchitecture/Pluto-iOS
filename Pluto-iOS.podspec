@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Pluto-iOS"
-  s.version      = "1.2.0"
+  s.version      = "1.1.0"
   s.summary      = "iOS application development general framework."
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/PlutoArchitecture/Pluto-iOS.git", :tag => "1.2.0" }
+  s.source       = { :git => "https://github.com/PlutoArchitecture/Pluto-iOS.git", :tag => "1.1.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,11 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  #s.source_files  = "Classes", "Pluto-iOS/Pluto-iOS/Classes/*.{h，m}"
-  s.source_files  = 'Pluto-iOS/Pluto/*.{h,m}'
+  #s.source_files  = "Classes", "Pluto-iOS/Pluto/*.{h，m}"
+   s.source_files  = "Pluto-iOS/Pluto/*"
   #s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  #s.public_header_files = "Pluto-iOS/Pluto/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -135,5 +135,11 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-
+  
+  #s.dependency 'MKNetworkKit'
+  #s.dependency 'ProgressHUD'
+  #s.dependency 'SDWebImage'
+  #s.dependency 'Toast'
+  #s.dependency 'YYModel'
+  #s.dependency 'MJRefresh'
 end
