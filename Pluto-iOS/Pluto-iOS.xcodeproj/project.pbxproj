@@ -16,7 +16,6 @@
 		467C02EC1ED2ED020010A487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 467C02EA1ED2ED020010A487 /* LaunchScreen.storyboard */; };
 		467C02F71ED2ED030010A487 /* Pluto_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C02F61ED2ED030010A487 /* Pluto_iOSTests.m */; };
 		467C03021ED2ED030010A487 /* Pluto_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C03011ED2ED030010A487 /* Pluto_iOSUITests.m */; };
-		467C05F41ED2ED690010A487 /* APIURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C053C1ED2ED690010A487 /* APIURL.m */; };
 		467C05F51ED2ED690010A487 /* PlutoAPIEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C053E1ED2ED690010A487 /* PlutoAPIEngine.m */; };
 		467C05F61ED2ED690010A487 /* SysInfoParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C05401ED2ED690010A487 /* SysInfoParam.m */; };
 		467C05F71ED2ED690010A487 /* DataManagerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C05441ED2ED690010A487 /* DataManagerProxy.m */; };
@@ -95,6 +94,7 @@
 		467C06401ED2ED690010A487 /* UIView+MGOView.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C05EC1ED2ED690010A487 /* UIView+MGOView.m */; };
 		467C06411ED2ED690010A487 /* UUIDShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C05EE1ED2ED690010A487 /* UUIDShortener.m */; };
 		467C06421ED2ED690010A487 /* PlutoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 467C05F11ED2ED690010A487 /* PlutoViewController.m */; };
+		4FA1D44D1F4423E3007BF624 /* APIURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA1D44C1F4423E3007BF624 /* APIURL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,8 +132,6 @@
 		467C02FD1ED2ED030010A487 /* Pluto-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Pluto-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		467C03011ED2ED030010A487 /* Pluto_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pluto_iOSUITests.m; sourceTree = "<group>"; };
 		467C03031ED2ED030010A487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		467C053B1ED2ED690010A487 /* APIURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIURL.h; sourceTree = "<group>"; };
-		467C053C1ED2ED690010A487 /* APIURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIURL.m; sourceTree = "<group>"; };
 		467C053D1ED2ED690010A487 /* PlutoAPIEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlutoAPIEngine.h; sourceTree = "<group>"; };
 		467C053E1ED2ED690010A487 /* PlutoAPIEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlutoAPIEngine.m; sourceTree = "<group>"; };
 		467C053F1ED2ED690010A487 /* SysInfoParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysInfoParam.h; sourceTree = "<group>"; };
@@ -296,6 +294,8 @@
 		467C05F11ED2ED690010A487 /* PlutoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlutoViewController.m; sourceTree = "<group>"; };
 		467C05F21ED2ED690010A487 /* PlutoViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlutoViewControllerDelegate.h; sourceTree = "<group>"; };
 		467C06431ED2EDA90010A487 /* Pluto.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pluto.pch; sourceTree = "<group>"; };
+		4FA1D44B1F4423E3007BF624 /* APIURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIURL.h; sourceTree = "<group>"; };
+		4FA1D44C1F4423E3007BF624 /* APIURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIURL.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -408,8 +408,8 @@
 		467C053A1ED2ED690010A487 /* APIEngine */ = {
 			isa = PBXGroup;
 			children = (
-				467C053B1ED2ED690010A487 /* APIURL.h */,
-				467C053C1ED2ED690010A487 /* APIURL.m */,
+				4FA1D44B1F4423E3007BF624 /* APIURL.h */,
+				4FA1D44C1F4423E3007BF624 /* APIURL.m */,
 				467C053D1ED2ED690010A487 /* PlutoAPIEngine.h */,
 				467C053E1ED2ED690010A487 /* PlutoAPIEngine.m */,
 				467C053F1ED2ED690010A487 /* SysInfoParam.h */,
@@ -937,10 +937,10 @@
 				467C06111ED2ED690010A487 /* NSData+MKBase64.m in Sources */,
 				467C06351ED2ED690010A487 /* Result.m in Sources */,
 				467C062F1ED2ED690010A487 /* UIView+Toast.m in Sources */,
+				4FA1D44D1F4423E3007BF624 /* APIURL.m in Sources */,
 				467C063F1ED2ED690010A487 /* UILabel+ContentSize.m in Sources */,
 				467C06131ED2ED690010A487 /* NSDictionary+RequestEncoding.m in Sources */,
 				467C063D1ED2ED690010A487 /* SHA1Util.m in Sources */,
-				467C05F41ED2ED690010A487 /* APIURL.m in Sources */,
 				467C06311ED2ED690010A487 /* YYClassInfo.m in Sources */,
 				467C063B1ED2ED690010A487 /* MGOStringArrayOperation.m in Sources */,
 				467C063C1ED2ED690010A487 /* NSDate+MGO.m in Sources */,
@@ -1225,6 +1225,7 @@
 				467C03081ED2ED030010A487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		467C03091ED2ED030010A487 /* Build configuration list for PBXNativeTarget "Pluto-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -1233,6 +1234,7 @@
 				467C030B1ED2ED030010A487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		467C030C1ED2ED030010A487 /* Build configuration list for PBXNativeTarget "Pluto-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -1241,6 +1243,7 @@
 				467C030E1ED2ED030010A487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
